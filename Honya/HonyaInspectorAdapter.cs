@@ -49,6 +49,8 @@ namespace Honya
 
         public void AddToTab(TabPage o)
         {
+            this.textBox.Height = o.Height;
+            this.textBox.Width = o.Width;
             o.Text = InspectorName;
             o.Controls.Add(this.textBox);
         }
